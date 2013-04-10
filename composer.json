@@ -1,6 +1,6 @@
 {
-    "name": "skeetr/silex-skeetr",
-    "homepage": "http://github.com/skeetr/silex-skeetr",
+    "name": "skeetr/silex",
+    "homepage": "http://github.com/skeetr/silex",
     "version": "0.0.1-alpha",
     "type": "library",
     "description": "This is a Skeetr implementation for Silex-based apps.",
