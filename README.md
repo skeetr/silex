@@ -37,21 +37,26 @@ Parameters
 Usage
 ------------
 
-At your Silex project create the file "web/worker.php"
+At your Silex project create the file `web/worker.php`
 
 ```PHP
 $app = new Silex\Application();
+
+/* the register startup calls and config */
+
 $app->register(new Skeetr\Silex\SkeetrServiceProvider())
 
-//Gearman Server hostname
-$app['skeetr.host'] = '127.0.0.1';
 
-//Gearman Server port
+$app['skeetr.host'] = '127.0.0.1';
 $app['skeetr.port'] = 4730;
 
 $app['skeetr.client']->work();
 ```
 
+Now you can run the skeetr worker
+```
+php web/worker.php
+```
 
 Tests
 -----
