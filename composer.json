@@ -1,0 +1,28 @@
+{
+    "name": "skeetr/silex-skeetr",
+    "homepage": "http://github.com/skeetr/silex-skeetr",
+    "version": "0.0.1-alpha",
+    "type": "library",
+    "description": "This is a Skeetr implementation for Silex-based apps.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Máximo Cuadros", 
+            "email": "mcuadros@gmail.com", 
+            "homepage": "https://github.com/mcuadros"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0",
+        "skeetr/skeetr": "dev"
+    },
+    "require-dev": {
+        "silex/silex": "1.0.*@dev"
+    },
+    "autoload": {
+        "psr-0": {
+            "Skeetr/Silex": "src/"
+        }
+    }
+}
